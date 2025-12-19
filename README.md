@@ -1,4 +1,4 @@
-ReBOOT
+ReBOOT Web Application
 
 Project Purpose
 
