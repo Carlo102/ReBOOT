@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Verification</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @layer utilities {
+            @keyframes swing {
+                20% { transform: rotate(15deg); }
+                40% { transform: rotate(-10deg); }
+                60% { transform: rotate(5deg); }
+                80% { transform: rotate(-5deg); }
+                100% { transform: rotate(0deg); }
+            }
+
+            .animate-swing {
+                animation: swing 1s ease-in-out both;
+                transform-origin: top center;
+            }
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex items-center text-white">
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const error = params.get("error");
+    const message = params.get("message");
+
+    const successContent = `
+        <div class="flex flex-col items-center mx-auto w-1/2 py-6 bg-emerald-800 rounded-lg shadow-lg">
+            <h2 class="text-center text-2xl mb-4">Email has been verified</h2>
+            
+            <svg xmlns="http://www.w3.org/2000/svg"
+                width="85" height="85"
+                fill="currentColor"
+                class="animate-swing"
+                viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 
+                    0 0 0-1.08.022L7.477 9.417 
+                    5.384 7.323a.75.75 0 0 0-1.06 
+                    1.06L6.97 11.03a.75.75 0 0 0 
+                    1.079-.02l3.992-4.99a.75.75 
+                    0 0 0-.01-1.05z"/>
+            </svg>
+
+            <h3 class="mt-4 text-xl">You can now log in</h3>
+            <p class="text-sm mt-2">@ReBOOT</p>
+        </div>
+    `;
+
+    const errorContent = `
+        <div class="flex flex-col items-center mx-auto w-1/2 py-6 bg-red-800 rounded-lg shadow-lg">
+            <h2 class="text-center text-2xl mb-4">${message}</h2>
+            
+            <svg xmlns="http://www.w3.org/2000/svg"
+                width="85" height="85"
+                fill="currentColor"
+                class="animate-swing"
+                viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 
+                    0 0 1 16 0zM5.354 4.646a.5.5 
+                    0 1 0-.708.708L7.293 8l-2.647 
+                    2.646a.5.5 0 0 0 .708.708L8 
+                    8.707l2.646 2.647a.5.5 0 0 0 
+                    .708-.708L8.707 8l2.647-2.646a.5.5 
+                    0 0 0-.708-.708L8 7.293 
+                    5.354 4.646z"/>
+            </svg>
+
+            <h3 class="mt-4 text-xl">Please try again!</h3>
+            <p class="text-sm mt-2">@ReBOOT</p>
+        </div>
+    `;
+
+    document.body.classList.add(error ? "bg-slate-400" : "bg-slate-400");
+    document.body.innerHTML = error ? errorContent : successContent;
+</script>
+</body>
+</html>
