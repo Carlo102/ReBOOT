@@ -22,52 +22,53 @@
   </script>
 </head>
 <body class="bg-[#070b18]">
-    <div class="flex h-screen overflow-hidden">
-        <aside class="w-64 bg-[#081028] text-slate-300 shrink-0">
-            <div class="p-6">
-                <h1 class="text-2xl font-bold mb-8">ReBOOT</h1>
-                <nav class="space-y-2">
-                    <a href="#" data-page="dashboard" class="nav-link space-x-3 text-gray-300 text-sm font-medium flex items-center cursor-pointer hover:bg-[#0b1739] rounded-md px-3 py-2.5 transition-all duration-300">
-                        <i class="fas fa-chart-line"></i>
-                        <span>Dashboard</span>
-                    </a>
-                    <a href="#" data-page="jobtracker" class="nav-link space-x-3 text-gray-300 text-sm font-medium flex items-center cursor-pointer hover:bg-[#0b1739] rounded-md px-3 py-2.5 transition-all duration-300">
-                        <i class="fas fa-briefcase"></i>
-                        <span>Job Tracker</span>
-                    </a>
-                    <a href="#" data-page="jobsuggestions" class="nav-link space-x-3 text-gray-300 text-sm font-medium flex items-center cursor-pointer hover:bg-[#0b1739] rounded-md px-3 py-2.5 transition-all duration-300">
-                        <i class="fas fa-search"></i>
-                        <span>Job Suggestions</span>
-                    </a>
-                    <a href="#" data-page="levelup" class="nav-link space-x-3 text-gray-300 text-sm font-medium flex items-center cursor-pointer hover:bg-[#0b1739] rounded-md px-3 py-2.5 transition-all duration-300">
-                        <i class="fas fa-graduation-cap"></i>
-                        <span>Level Up</span>
-                    </a>
-                    <a href="#" data-page="motivation" class="nav-link space-x-3 text-gray-300 text-sm font-medium flex items-center cursor-pointer hover:bg-[#0b1739] rounded-md px-3 py-2.5 transition-all duration-300">
-                        <i class="fas fa-heart"></i>
-                        <span>Daily Motivation</span>
+  <div class="flex h-screen overflow-hidden">
+    <aside class="w-64 bg-[#081028] text-slate-300 shrink-0">
+      <div class="p-6">
+
+        <h1 class="text-2xl font-bold mb-8">ReBOOT</h1>
+        <nav class="space-y-2">
+          <a href="#" data-page="dashboard" class="nav-link space-x-3 text-gray-300 text-sm font-medium flex items-center cursor-pointer hover:bg-[#0b1739] rounded-md px-3 py-2.5 transition-all duration-300">
+            <i class="fas fa-chart-line"></i>
+            <span>Dashboard</span>
+            </a>
+            <a href="#" data-page="jobtracker" class="nav-link space-x-3 text-gray-300 text-sm font-medium flex items-center cursor-pointer hover:bg-[#0b1739] rounded-md px-3 py-2.5 transition-all duration-300">
+              <i class="fas fa-briefcase"></i>
+              <span>Job Tracker</span>
+              </a>
+              <a href="#" data-page="jobsuggestions" class="nav-link space-x-3 text-gray-300 text-sm font-medium flex items-center cursor-pointer hover:bg-[#0b1739] rounded-md px-3 py-2.5 transition-all duration-300">
+                <i class="fas fa-search"></i>
+                <span>Job Suggestions</span>
+                </a>
+                <a href="#" data-page="upskillhub" class="nav-link space-x-3 text-gray-300 text-sm font-medium flex items-center cursor-pointer hover:bg-[#0b1739] rounded-md px-3 py-2.5 transition-all duration-300">
+                  <i class="fas fa-graduation-cap"></i>
+                  <span>Upskill Hub</span>
+                  </a>
+                  <a href="#" data-page="motivation" class="nav-link space-x-3 text-gray-300 text-sm font-medium flex items-center cursor-pointer hover:bg-[#0b1739] rounded-md px-3 py-2.5 transition-all duration-300">
+                    <i class="fas fa-heart"></i>
+                    <span>Daily Motivation</span>
                     </a>
                     <a href="#" data-page="budget" class="nav-link space-x-3 text-gray-300 text-sm font-medium flex items-center cursor-pointer hover:bg-[#0b1739] rounded-md px-3 py-2.5 transition-all duration-300">
-                        <i class="fas fa-wallet"></i>
-                        <span>Budget Tracker</span>
+                      <i class="fas fa-wallet"></i>
+                      <span>Budget Tracker</span>
                     </a>
                     <a href="#" data-page="resources" class="nav-link space-x-3 text-gray-300 text-sm font-medium flex items-center cursor-pointer hover:bg-[#0b1739] rounded-md px-3 py-2.5 transition-all duration-300">
                         <i class="fas fa-toolbox"></i>
                         <span>Resources</span>
                     </a>
-                </nav>
-            </div>
+                  </nav>
+              </div>
             <div class="absolute bottom-0 w-64 p-6 border-t border-indigo-500">
-                <div class="space-y-3">
-                        
-                    <div class="flex items-center space-x-3">
-                        <div class="w-10 h-10 bg-indigo-400 rounded-full flex items-center justify-center">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="flex-1">
-                            <p id="sidebarUserName" class="text-sm text-gray-300 whitespace-nowrap font-medium"></p>
-                            <p class="text-xs text-gray-400 whitespace-nowrap">User</p>
-                        </div>
+              <div class="space-y-3">    
+                <div class="flex items-center space-x-3">
+                  <div class="w-10 h-10 bg-indigo-400 rounded-full flex items-center justify-center">
+                    <i class="fas fa-user"></i>
+                    </div>
+
+                    <div class="flex-1">
+                      <p id="sidebarUserName" class="text-sm text-gray-300 whitespace-nowrap font-medium"></p>
+                      <p class="text-xs text-gray-400 whitespace-nowrap">User</p>
+                      </div>
                     </div>
                     <button id="logoutBtn" class="w-full flex items-center justify-center space-x-2 px-4 py-2 bg-red-600 bg-opacity-20 text-red-400 rounded-lg hover:bg-opacity-30 transition-all border border-red-600 border-opacity-30">
                         <i class="fas fa-sign-out-alt"></i>
@@ -79,117 +80,115 @@
 
         <main class="flex-1 overflow-y-auto">
            
-            <div id="dashboardPage" class="page-content block">
-            
+          <div id="dashboardPage" class="page-content block">
             <header class="bg-gray-900 shadow-sm border-b border-gray-300 p-6">
-                <div class="flex justify-between items-center">
-                    <div>
-                        <h2 class="text-2xl font-bold text-white">Welcome back, User</h2>
-                        <p class="text-gray-300 mt-1">Here's your progress today</p>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                        <button class="bg-gray-900 p-2.5 cursor-pointer rounded-full shadow-sm hover:shadow-purple-100 hover:shadow-md hover:scale-105 transition-all">
-                            <i class="fas fa-bell text-gray-300"></i>
-                        </button>
-                        <button id="addJobBtn" class="bg-gray-900 px-6 py-2.5 cursor-pointer rounded-full text-slate-300 text-sm font-semibold border border-purple-200 shadow-sm hover:shadow-purple-100 hover:shadow-md hover:scale-105 transition-all">
+              <div class="flex justify-between items-center">
+                <div>
+                  <h2 id="welcomeMessage" class="text-2xl font-bold text-white">Welcome back, User</h2>
+                  <p class="text-gray-300 mt-1">Here's your progress today</p>
+                  </div>             
+                  <div class="flex items-center space-x-4">
+                    <button class="bg-gray-900 p-2.5 cursor-pointer rounded-full shadow-sm hover:shadow-purple-100 hover:shadow-md hover:scale-105 transition-all">
+                      <i class="fas fa-bell text-gray-300"></i>
+                      </button>                     
+                      <button id="addJobBtn" class="bg-gray-900 px-6 py-2.5 cursor-pointer rounded-full text-slate-300 text-sm font-semibold border border-purple-200 shadow-sm hover:shadow-purple-100 hover:shadow-md hover:scale-105 transition-all">
                             + Add Job Application
                         </button>
                     </div>
                 </div>
             </header>
 
-            <div class="p-6">
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+            <div class="p-6">                
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+                <div class="bg-blue-950 rounded-xl shadow-[0_0_20px_rgba(56,189,248,0.2)] p-6">
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <p class="text-slate-300 text-sm">Applications</p>
+                      <h3 id="applicationsCount" class="text-3xl font-bold text-slate-300 mt-2">...</h3>                     
+                      <p class="text-green-700 text-sm mt-2">+<span id="weeklyApps">3</span> this week</p>
+                      </div>                     
+                      <div class="bg-blue-900 p-3 rounded-lg">
+                        <i class="fas fa-paper-plane text-slate-300"></i>                       
+                        </div>
+                        </div>
+                    </div>
                     <div class="bg-blue-950 rounded-xl shadow-[0_0_20px_rgba(56,189,248,0.2)] p-6">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <p class="text-slate-300 text-sm">Applications</p>
-                                <h3 id="applicationsCount" class="text-3xl font-bold text-slate-300 mt-2">...</h3>
-                                <p class="text-green-700 text-sm mt-2">+<span id="weeklyApps">3</span> this week</p>
+                      <div class="flex justify-between items-start">                       
+                        <div>                         
+                          <p class="text-slate-300 text-sm">Interviews</p>
+                          <h3 id="interviewsCount" class="text-3xl font-bold text-slate-300 mt-2">...</h3>
+                          <p class="text-orange-700 text-sm mt-2">2 scheduled</p>
+                          </div>
+                          <div class="bg-blue-900 p-3 rounded-lg">
+                            <i class="fas fa-calendar-check text-slate-300"></i>
                             </div>
-                            <div class="bg-blue-900 p-3 rounded-lg">
-                                <i class="fas fa-paper-plane text-slate-300"></i>
-                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-blue-950 rounded-xl shadow-[0_0_20px_rgba(56,189,248,0.2)] p-6">
+                      <div class="flex justify-between items-start">
+                        <div>                         
+                          <p class="text-slate-300 text-sm">Courses Completed</p>
+                          <h3 id="coursesCount" class="text-3xl font-bold text-slate-300 mt-2">8</h3>
+                          <p class="text-purple-700 text-sm mt-2">12h learning time</p>
+                          </div>
+                          <div class="bg-blue-900 p-3 rounded-lg">
+                            <i class="fas fa-book text-slate-300"></i>
+                            </div>                           
                         </div>
                     </div>
 
                     <div class="bg-blue-950 rounded-xl shadow-[0_0_20px_rgba(56,189,248,0.2)] p-6">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <p class="text-slate-300 text-sm">Interviews</p>
-                                <h3 id="interviewsCount" class="text-3xl font-bold text-slate-300 mt-2">...</h3>
-                                <p class="text-orange-700 text-sm mt-2">2 scheduled</p>
-                            </div>
-                            <div class="bg-blue-900 p-3 rounded-lg">
-                                <i class="fas fa-calendar-check text-slate-300"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-blue-950 rounded-xl shadow-[0_0_20px_rgba(56,189,248,0.2)] p-6">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <p class="text-slate-300 text-sm">Courses Completed</p>
-                                <h3 id="coursesCount" class="text-3xl font-bold text-slate-300 mt-2">8</h3>
-                                <p class="text-purple-700 text-sm mt-2">12h learning time</p>
-                            </div>
-                            <div class="bg-blue-900 p-3 rounded-lg">
-                                <i class="fas fa-book text-slate-300"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-blue-950 rounded-xl shadow-[0_0_20px_rgba(56,189,248,0.2)] p-6">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <p class="text-slate-300 text-sm">Budget Remaining</p>
-                                <h3 id="budgetRemaining" class="text-3xl font-bold text-slate-300 mt-2">...</h3>
-                                <p class="text-red-700 text-sm mt-2">78% of savings</p>
-                            </div>
-                            <div class="bg-blue-900 p-3 rounded-lg">
-                                <i class="fas fa-dollar-sign text-slate-300"></i>
+                      <div class="flex justify-between items-start">
+                        <div>
+                          <p class="text-slate-300 text-sm">Budget Remaining</p>
+                          <h3 id="budgetRemaining" class="text-3xl font-bold text-slate-300 mt-2">...</h3>
+                          <p class="text-red-700 text-sm mt-2">78% of savings</p>
+                          </div>
+                          <div class="bg-blue-900 p-3 rounded-lg">
+                            <i class="fas fa-dollar-sign text-slate-300"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-
                
                 <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
-                
-                    <div class="lg:col-span-3 space-y-6">
-                        <div class="bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-700">
-                            <div class="flex items-start justify-between">
-                                <div class="flex items-start space-x-4">
-                                    <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                                        JD
+                  <div class="lg:col-span-3 space-y-6">
+                    <div class="bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-700">
+                      <div class="flex items-start justify-between">
+                        <div class="flex items-start space-x-4">
+                          <div id="profileInitials" class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center text-white text-2xl font-bold">                   
+                            </div>
+
+                            <div>
+                              <h3 id="profileNameDisplay" class="text-xl font-bold text-slate-300">...</h3>
+                              <p class="text-gray-400">Software Engineer</p>
+                              <div class="flex items-center space-x-4 mt-2 text-sm text-gray-400">
+                                <span id="profileLocationText">
+                                  <i class="fas fa-map-marker-alt mr-1"></i>
+                                  <span id="profileLocationDisplay"></span>
+                                  </span>
+                                  <span>
+                                    <i id="profileEmailText" class="fas fa-envelope mr-1"></i>
+                                    <span id="profileEmailDisplay"></span>
+                                    </span>
                                     </div>
-                                    <div>
-                                        <h3 class="text-xl font-bold text-slate-300">John Marston</h3>
-                                        <p class="text-gray-400">Software Engineer</p>
-                                        <div class="flex items-center space-x-4 mt-2 text-sm text-gray-400">
-                                            <span>
-                                                <i class="fas fa-map-marker-alt mr-1"></i>San Francisco, CA
-                                            </span>
-                                            <span>
-                                                <i class="fas fa-envelope mr-1"></i>test@gmail.com
-                                            </span>
-                                        </div>
-                                    </div>
+                                  </div>                 
                                 </div>
                                 <button class="text-indigo-400 hover:text-indigo-300 text-sm font-medium">
-                                    <i class="fas fa-edit mr-1"></i>Edit Profile
+                                  <i class="fas fa-edit mr-1"></i>Edit Profile
                                 </button>
                             </div>
+
                             <div class="mt-4 pt-4 border-t border-gray-700">
-                                <div class="grid grid-cols-3 gap-4 text-center">
-                                    <div>
-                                        <p class="text-2xl font-bold text-blue-900">85%</p>
-                                        <p class="text-xs text-gray-400">Profile Complete</p>
-                                    </div>
-                                    <div>
-                                        <p id ="skillsListed" class="text-2xl font-bold text-blue-900">...</p>
-                                        <p class="text-xs text-gray-400">Skills Listed</p>
+
+                              <div class="grid grid-cols-3 gap-4 text-center">
+                                <div>
+                                  <p id="profileValue" class="text-2xl font-bold text-blue-900">85%</p>
+                                  <p class="text-xs text-gray-400">Profile Complete</p>
+                                  </div>
+                                  <div>
+                                    <p id ="skillsListed" class="text-2xl font-bold text-blue-900">...</p>
+                                    <p class="text-xs text-gray-400">Skills Listed</p>
                                     </div>
                                     <div>
                                         <p id="yearsExperience" class="text-2xl font-bold text-blue-900">...</p>
@@ -203,34 +202,33 @@
                             <div class="flex justify-between items-center mb-4">
                                 <h3 class="text-lg font-semibold text-white">Recommended Jobs for You</h3>
                                 <a href="#" class="text-indigo-400 text-sm hover:underline">View All</a>
-                            </div>
-                            <div class="space-y-4">
-                               
-                                <div class="border border-gray-700 bg-gray-800 rounded-lg p-4 hover:border-gray-500 hover:shadow-lg transition">
-                                    <div class="flex justify-between items-start mb-3">
-                                        <div class="flex-1">
-                                            <div class="flex items-start justify-between">
-                                                <div>
-                                                    <h4 class="font-semibold text-white text-lg">Senior Frontend Developer</h4>
-                                                    <p class="text-gray-300 text-sm">Tech Innovators Inc.</p>
-                                                </div>
-                                                <button class="text-gray-400 hover:text-indigo-400 transition">
-                                                    <i class="far fa-bookmark text-xl"></i>
-                                                </button>
-                                            </div>
-                                            <div class="flex items-center space-x-4 mt-2 text-sm text-gray-400">
-                                                <span><i class="fas fa-map-marker-alt mr-1"></i>...</span>
-                                                <span><i class="fas fa-briefcase mr-1"></i>Full-time</span>
-                                                <span><i class="fas fa-clock mr-1"></i>2 days ago</span>
+                            </div>                           
+                            <div class="space-y-4">                              
+                              <div class="border border-gray-700 bg-gray-800 rounded-lg p-4 hover:border-gray-500 hover:shadow-lg transition">
+                                <div class="flex justify-between items-start mb-3">
+                                  <div class="flex-1">
+                                    <div class="flex items-start justify-between">
+                                      <div>
+                                        <h4 class="font-semibold text-white text-lg">Senior Frontend Developer</h4>
+                                        <p class="text-gray-300 text-sm">Tech Innovators Inc.</p>
+                                        </div>
+                                        <button class="text-gray-400 hover:text-indigo-400 transition">
+                                          <i class="far fa-bookmark text-xl"></i>
+                                          </button>
+                                          </div>
+                                          <div class="flex items-center space-x-4 mt-2 text-sm text-gray-400">
+                                            <span><i class="fas fa-map-marker-alt mr-1"></i>...</span>
+                                            <span><i class="fas fa-briefcase mr-1"></i>Full-time</span>
+                                            <span><i class="fas fa-clock mr-1"></i>2 days ago</span>
                                             </div>
                                             <p class="text-sm text-gray-300 mt-3">Looking for an experienced frontend developer to join our growing team. Work on cutting-edge web applications using React and modern technologies...</p>
                                             <div class="flex items-center justify-between mt-3">
-                                                <div>
-                                                    <p class="text-lg font-bold text-gray-300">P15,000 - P20,000</p>
-                                                    <div class="flex flex-wrap gap-2 mt-2">
-                                                        <span class="px-2 py-1 bg-blue-500 bg-opacity-20 text-blue-300 text-xs rounded-full">React</span>
-                                                        <span class="px-2 py-1 bg-blue-500 bg-opacity-20 text-blue-300 text-xs rounded-full">TypeScript</span>
-                                                        <span class="px-2 py-1 bg-blue-500 bg-opacity-20 text-blue-300 text-xs rounded-full">CSS</span>
+                                              <div>
+                                                  <p class="text-lg font-bold text-gray-300">P15,000 - P20,000</p>
+                                                  <div class="flex flex-wrap gap-2 mt-2">
+                                                    <span class="px-2 py-1 bg-blue-500 bg-opacity-20 text-blue-300 text-xs rounded-full">React</span>
+                                                    <span class="px-2 py-1 bg-blue-500 bg-opacity-20 text-blue-300 text-xs rounded-full">TypeScript</span>
+                                                    <span class="px-2 py-1 bg-blue-500 bg-opacity-20 text-blue-300 text-xs rounded-full">CSS</span>
                                                     </div>
                                                 </div>
                                                 <button class="bg-indigo-700 text-white px-6 py-2 rounded-lg hover:bg-indigo-800 transition font-medium">
@@ -240,34 +238,33 @@
                                         </div>
                                     </div>
                                 </div>
-
-                              
+                             
                                 <div class="border border-gray-700 bg-gray-800 rounded-lg p-4 hover:border-gray-500 hover:shadow-lg transition">
-                                    <div class="flex justify-between items-start mb-3">
-                                        <div class="flex-1">
-                                            <div class="flex items-start justify-between">
-                                                <div>
-                                                    <h4 class="font-semibold text-white text-lg">React Developer</h4>
-                                                    <p class="text-gray-300 text-sm">StartupXYZ</p>
-                                                </div>
-                                                <button class="text-gray-400 hover:text-indigo-400 transition">
-                                                    <i class="far fa-bookmark text-xl"></i>
-                                                </button>
+                                  <div class="flex justify-between items-start mb-3">
+                                    <div class="flex-1">
+                                      <div class="flex items-start justify-between">
+                                        <div>
+                                          <h4 class="font-semibold text-white text-lg">React Developer</h4>
+                                          <p class="text-gray-300 text-sm">StartupXYZ</p>
+                                          </div>
+                                          <button class="text-gray-400 hover:text-indigo-400 transition">
+                                            <i class="far fa-bookmark text-xl"></i>
+                                            </button>
                                             </div>
                                             <div class="flex items-center space-x-4 mt-2 text-sm text-gray-400">
-                                                <span><i class="fas fa-map-marker-alt mr-1"></i>Remote</span>
-                                                <span><i class="fas fa-briefcase mr-1"></i>Contract</span>
-                                                <span><i class="fas fa-clock mr-1"></i>5 days ago</span>
+                                              <span><i class="fas fa-map-marker-alt mr-1"></i>Remote</span>
+                                              <span><i class="fas fa-briefcase mr-1"></i>Contract</span>
+                                              <span><i class="fas fa-clock mr-1"></i>5 days ago</span>
                                             </div>
                                             <p class="text-sm text-gray-300 mt-3">Join our startup as a React developer! Build innovative products from scratch and make a real impact. Flexible work hours and remote-friendly...</p>
                                             <div class="flex items-center justify-between mt-3">
-                                                <div>
-                                                    <p class="text-lg font-bold text-gray-300">P50,000 - P75,000</p>
-                                                    <div class="flex flex-wrap gap-2 mt-2">
-                                                        <span class="px-2 py-1 bg-blue-500 bg-opacity-20 text-blue-300 text-xs rounded-full">React</span>
-                                                        <span class="px-2 py-1 bg-blue-500 bg-opacity-20 text-blue-300 text-xs rounded-full">Node.js</span>
-                                                        <span class="px-2 py-1 bg-blue-500 bg-opacity-20 text-blue-300 text-xs rounded-full">MongoDB</span>
-                                                    </div>
+                                              <div>
+                                                <p class="text-lg font-bold text-gray-300">P50,000 - P75,000</p>
+                                                <div class="flex flex-wrap gap-2 mt-2">
+                                                  <span class="px-2 py-1 bg-blue-500 bg-opacity-20 text-blue-300 text-xs rounded-full">React</span>
+                                                  <span class="px-2 py-1 bg-blue-500 bg-opacity-20 text-blue-300 text-xs rounded-full">Node.js</span>
+                                                  <span class="px-2 py-1 bg-blue-500 bg-opacity-20 text-blue-300 text-xs rounded-full">MongoDB</span>
+                                                  </div>
                                                 </div>
                                                 <button class="bg-indigo-700 text-white px-6 py-2 rounded-lg hover:bg-indigo-800 transition font-medium">
                                                     Apply Now
@@ -276,19 +273,18 @@
                                         </div>
                                     </div>
                                 </div>
-
-                        
+                       
                                 <div class="border border-gray-700 bg-gray-800 rounded-lg p-4 hover:border-gray-500 hover:shadow-lg transition">
-                                    <div class="flex justify-between items-start mb-3">
-                                        <div class="flex-1">
-                                            <div class="flex items-start justify-between">
-                                                <div>
-                                                    <h4 class="font-semibold text-white text-lg">Full Stack Engineer</h4>
-                                                    <p class="text-gray-300 text-sm">Digital Solutions Corp</p>
-                                                </div>
-                                                <button class="text-gray-400 hover:text-indigo-400 transition">
-                                                    <i class="far fa-bookmark text-xl"></i>
-                                                </button>
+                                  <div class="flex justify-between items-start mb-3">
+                                    <div class="flex-1">
+                                      <div class="flex items-start justify-between">
+                                        <div>
+                                          <h4 class="font-semibold text-white text-lg">Full Stack Engineer</h4>
+                                          <p class="text-gray-300 text-sm">Digital Solutions Corp</p>
+                                          </div>
+                                          <button class="text-gray-400 hover:text-indigo-400 transition">
+                                            <i class="far fa-bookmark text-xl"></i>                                
+                                            </button>
                                             </div>
                                             <div class="flex items-center space-x-4 mt-2 text-sm text-gray-400">
                                                 <span><i class="fas fa-map-marker-alt mr-1"></i>New York, NY</span>
@@ -314,67 +310,63 @@
                                 </div>
                             </div>
                         </div>
-
-                        
-                        <div class="bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-700">
-                            <div class="flex justify-between items-center mb-4">
-                                <h3 class="text-lg font-semibold text-white">Weekly Goal Progress</h3>
-                                <span class="text-sm text-gray-300"><span id="currentGoal">3</span> of 5 applications</span>
+                      
+                        <div class="bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-700">                         
+                          <div class="flex justify-between items-center mb-4">                           
+                            <h3 class="text-lg font-semibold text-white">Weekly Goal Progress</h3>
+                            <span class="text-sm text-gray-300"><span id="currentGoal">3</span> of 5 applications</span>
                             </div>
                             <div class="mb-2">
-                                <div class="flex justify-between text-sm mb-1">
-                                    <span class="text-slate-300">Job Applications</span>
-                                    <span id="goalPercentage" class="font-medium text-indigo-400">60%</span>
+                              <div class="flex justify-between text-sm mb-1">
+                                <span class="text-slate-300">Job Applications</span>
+                                <span id="goalPercentage" class="font-medium text-indigo-400">60%</span>
                                 </div>
                                 <div class="w-full bg-gray-700 rounded-full h-3">
-                                    <div id="progressBar" class="bg-indigo-600 h-3 rounded-full transition-all duration-500" style="width: 60%"></div>
+                                  <div id="progressBar" class="bg-indigo-600 h-3 rounded-full transition-all duration-500" style="width: 60%"></div>                                
                                 </div>
                             </div>
                             <div class="mt-4 p-4 bg-indigo-500 bg-opacity-20 rounded-lg border border-indigo-500 border-opacity-30">
-                                <p id="goalMessage" class="text-sm text-indigo-200"><i class="fas fa-bullseye mr-2"></i>Keep it up! Just 2 more applications to hit your weekly goal.</p>
+                              <p id="goalMessage" class="text-sm text-indigo-200"><i class="fas fa-bullseye mr-2"></i>Keep it up! Just 2 more applications to hit your weekly goal.</p>
                             </div>
                         </div>
-
-                       
+                      
                         <div class="bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-700">
-                            <div class="flex justify-between items-center mb-4">
-                                <h3 class="text-lg font-semibold text-white">Recent Applications</h3>
-                                <a href="#" class="text-indigo-400 text-sm hover:underline">View All</a>
+                          <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-lg font-semibold text-white">Recent Applications</h3>
+                            <a href="#" class="text-indigo-400 text-sm hover:underline">View All</a>
                             </div>
-                            <div id="applicationsList" class="space-y-4">
-                               
+                            <div id="applicationsList" class="space-y-4">                              
                             </div>
                         </div>
-
-                       
+                      
                         <div class="bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-700">
                             <div class="flex justify-between items-center mb-4">
                                 <h3 class="text-lg font-semibold text-white">Recommended for You</h3>
                                 <a href="#" class="text-indigo-400 text-sm hover:underline">Browse All</a>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div class="border border-gray-700 bg-gray-700 rounded-lg p-4 hover:border-indigo-500 hover:shadow-lg transition">
-                                    <div class="flex items-start space-x-3">
-                                        <div class="w-16 h-16 bg-red-500 bg-opacity-20 rounded flex items-center justify-center shrink-0">
-                                            <i class="fab fa-youtube text-red-400 text-xl"></i>
-                                        </div>
-                                        <div class="flex-1">
-                                            <h4 class="font-medium text-white mb-1">React Hooks Masterclass</h4>
-                                            <p class="text-xs text-gray-400 mb-2">YouTube • 2h 30m</p>
-                                            <button class="course-btn text-xs bg-indigo-600 text-white px-3 py-1 rounded hover:bg-indigo-700 transition">Start Learning</button>
-                                        </div>
+                              <div class="border border-gray-700 bg-gray-700 rounded-lg p-4 hover:border-indigo-500 hover:shadow-lg transition">
+                                <div class="flex items-start space-x-3">                                  
+                                  <div class="w-16 h-16 bg-red-500 bg-opacity-20 rounded flex items-center justify-center shrink-0">
+                                    <i class="fab fa-youtube text-red-400 text-xl"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                      <h4 class="font-medium text-white mb-1">React Hooks Masterclass</h4>
+                                      <p class="text-xs text-gray-400 mb-2">YouTube • 2h 30m</p>
+                                      <button class="course-btn text-xs bg-indigo-600 text-white px-3 py-1 rounded hover:bg-indigo-700 transition">Start Learning</button>
+                                      </div>
                                     </div>
                                 </div>
 
                                 <div class="border border-gray-700 bg-gray-700 rounded-lg p-4 hover:border-indigo-500 hover:shadow-lg transition">
-                                    <div class="flex items-start space-x-3">
-                                        <div class="w-16 h-16 bg-blue-500 bg-opacity-20 rounded flex items-center justify-center shrink-0">
-                                            <i class="fas fa-graduation-cap text-blue-400 text-xl"></i>
-                                        </div>
-                                        <div class="flex-1">
-                                            <h4 class="font-medium text-white mb-1">CSS Grid & Flexbox</h4>
-                                            <p class="text-xs text-gray-400 mb-2">Coursera • 3h 15m</p>
-                                            <button class="course-btn text-xs bg-indigo-600 text-white px-3 py-1 rounded hover:bg-indigo-700 transition">Start Learning</button>
+                                  <div class="flex items-start space-x-3">                                   
+                                    <div class="w-16 h-16 bg-blue-500 bg-opacity-20 rounded flex items-center justify-center shrink-0">
+                                      <i class="fas fa-graduation-cap text-blue-400 text-xl"></i>
+                                      </div>
+                                      <div class="flex-1">
+                                        <h4 class="font-medium text-white mb-1">CSS Grid & Flexbox</h4>
+                                        <p class="text-xs text-gray-400 mb-2">Coursera • 3h 15m</p>
+                                        <button class="course-btn text-xs bg-indigo-600 text-white px-3 py-1 rounded hover:bg-indigo-700 transition">Start Learning</button>
                                         </div>
                                     </div>
                                 </div>
@@ -384,34 +376,33 @@
                             </div>
                         </div>
                     </div>
-
-                   
+                  
                     <div class="space-y-6">
-                        <div class="bg-blue-950 rounded-xl shadow-lg p-5 text-white">
-                            <h3 class="text-lg font-semibold mb-4 flex items-center">
-                                <i class="fas fa-bolt mr-2"></i>Quick Actions
-                            </h3>
-                            <div class="grid grid-cols-2 gap-2">
+                      <div class="bg-blue-950 rounded-xl shadow-lg p-5 text-white">
+                        <h3 class="text-lg font-semibold mb-4 flex items-center">
+                          <i class="fas fa-bolt mr-2"></i>Quick Actions
+                          </h3>
+                          <div class="grid grid-cols-2 gap-2">
+
+                            <button class="bg-white bg-opacity-20 hover:bg-opacity-30 p-3 rounded-lg transition text-center backdrop-blur-sm">                             
+                              <i class="fas fa-file-alt text-lg mb-1"></i>
+                              <p class="text-xs font-medium">Resume</p>
+                              </button>                             
                                 <button class="bg-white bg-opacity-20 hover:bg-opacity-30 p-3 rounded-lg transition text-center backdrop-blur-sm">
-                                    <i class="fas fa-file-alt text-lg mb-1"></i>
-                                    <p class="text-xs font-medium">Resume</p>
+                                  <i class="fas fa-search text-lg mb-1"></i>
+                                  <p class="text-xs font-medium">Find Jobs</p>
                                 </button>
                                 <button class="bg-white bg-opacity-20 hover:bg-opacity-30 p-3 rounded-lg transition text-center backdrop-blur-sm">
-                                    <i class="fas fa-search text-lg mb-1"></i>
-                                    <p class="text-xs font-medium">Find Jobs</p>
+                                  <i class="fas fa-network-wired text-lg mb-1"></i>
+                                  <p class="text-xs font-medium">Network</p>
                                 </button>
                                 <button class="bg-white bg-opacity-20 hover:bg-opacity-30 p-3 rounded-lg transition text-center backdrop-blur-sm">
-                                    <i class="fas fa-network-wired text-lg mb-1"></i>
-                                    <p class="text-xs font-medium">Network</p>
-                                </button>
-                                <button class="bg-white bg-opacity-20 hover:bg-opacity-30 p-3 rounded-lg transition text-center backdrop-blur-sm">
-                                    <i class="fas fa-book-reader text-lg mb-1"></i>
-                                    <p class="text-xs font-medium">Learn</p>
+                                  <i class="fas fa-book-reader text-lg mb-1"></i>
+                                  <p class="text-xs font-medium">Learn</p>
                                 </button>
                             </div>
                         </div>
-
-                        
+                       
                         <div class="bg-blue-950 rounded-xl shadow-lg p-6 border border-gray-700">
                             <h3 class="text-lg font-semibold text-white mb-4">Quick Resources</h3>
                             <div class="space-y-3">
@@ -586,15 +577,12 @@
             </div>
             </div>
            
-
-           
-            <div id="jobtrackerPage" class="page-content hidden">
-              
+            <section id="jobtrackerPage" class="page-content hidden">
                 <header class="bg-gray-800 shadow-lg border-b border-gray-700 p-6">
                     <div class="flex justify-between items-center">
                         <div>
-                            <h2 class="text-2xl font-bold text-white">Job Tracker</h2>
-                            <p class="text-gray-300 mt-1">Manage all your job applications</p>
+                          <h2 class="text-2xl font-bold text-white">Job Tracker</h2>
+                          <p class="text-gray-300 mt-1">Manage all your job applications</p>
                         </div>
                         <button id="addJobBtn2" class="bg-gray-900 px-6 py-2.5 cursor-pointer rounded-full text-slate-300 text-sm font-semibold border border-purple-200 shadow-sm hover:shadow-purple-100 hover:shadow-md hover:scale-105 transition-all">
                             + Add Job Application
@@ -602,35 +590,34 @@
                     </div>
                 </header>
 
-                <div class="p-6">
-                   
+                <div class="p-6">                  
                     <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
-                        <div class="bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-700">
-                            <div class="flex items-center justify-between mb-2">
-                                <p class="text-sm text-gray-400">Total Applications</p>
-                                <div class="bg-blue-500 bg-opacity-20 p-2 rounded-lg">
-                                    <i class="fas fa-paper-plane text-blue-400 text-sm"></i>
-                                </div>
+                      <div class="bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-700">
+                        <div class="flex items-center justify-between mb-2">
+                          <p class="text-sm text-gray-400">Total Applications</p>
+                          <div class="bg-blue-500 bg-opacity-20 p-2 rounded-lg">
+                            <i class="fas fa-paper-plane text-blue-400 text-sm"></i>
+                            </div>
                             </div>
                             <h3 id="totalApps" class="text-2xl font-bold text-white">0</h3>
                         </div>
 
                         <div class="bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-700">
-                            <div class="flex items-center justify-between mb-2">
-                                <p class="text-sm text-gray-400">In Review</p>
-                                <div class="bg-yellow-500 bg-opacity-20 p-2 rounded-lg">
-                                    <i class="fas fa-eye text-yellow-400 text-sm"></i>
-                                </div>
+                          <div class="flex items-center justify-between mb-2">
+                            <p class="text-sm text-gray-400">In Review</p>
+                            <div class="bg-yellow-500 bg-opacity-20 p-2 rounded-lg">
+                              <i class="fas fa-eye text-yellow-400 text-sm"></i>
+                            </div>
                             </div>
                             <h3 id="reviewApps" class="text-2xl font-bold text-white">0</h3>
                         </div>
 
                         <div class="bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-700">
-                            <div class="flex items-center justify-between mb-2">
-                                <p class="text-sm text-gray-400">Interviews</p>
-                                <div class="bg-green-500 bg-opacity-20 p-2 rounded-lg">
-                                    <i class="fas fa-calendar-check text-green-400 text-sm"></i>
-                                </div>
+                          <div class="flex items-center justify-between mb-2">
+                            <p class="text-sm text-gray-400">Interviews</p>
+                            <div class="bg-green-500 bg-opacity-20 p-2 rounded-lg">
+                              <i class="fas fa-calendar-check text-green-400 text-sm"></i>
+                            </div>
                             </div>
                             <h3 id="interviewApps" class="text-2xl font-bold text-white">0</h3>
                         </div>
@@ -645,16 +632,15 @@
                             <h3 id="responseRate" class="text-2xl font-bold text-white">0%</h3>
                         </div>
                     </div>
-
-                  
+                 
                     <div class="bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-700 mb-6">
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            <div>
-                                <input type="text" id="searchJobs" placeholder="Search by company or position..." class="w-full p-3 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent placeholder-gray-400">
+                          <div>
+                            <input type="text" id="searchJobs" placeholder="Search by company or position..." class="w-full p-3 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent placeholder-gray-400">
                             </div>
                             <div>
                                 <select id="filterStatus" class="w-full p-3 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
-                                    <option value="all">All Statuses</option>
+                                    <option value="all">All</option>
                                     <option value="Applied">Applied</option>
                                     <option value="In Review">In Review</option>
                                     <option value="Interview">Interview</option>
@@ -672,8 +658,7 @@
                             </div>
                         </div>
                     </div>
-
-                   
+                  
                     <div class="mb-6">
                         <h3 class="text-lg font-semibold text-white mb-4">Application Pipeline</h3>
                         <div class="grid grid-cols-1 md:grid-cols-5 gap-4" id="kanbanBoard">
@@ -709,10 +694,485 @@
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section id="upskillhubPage" class="page-content hidden">
+                <div class="bg-gray-800 rounded-lg p-6 mb-8 shadow-lg">
+                <div class="flex items-center justify-between flex-wrap gap-4">
+        <div>
+          <h1 class="text-white text-2xl font-bold mb-2">Upskill Center</h1>
+          <p class="text-gray-400">Enhance your skills with free courses, tutorials, and career resources</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <svg class="w-10 h-10 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div class="bg-blue-950 rounded-lg p-6 transform hover:scale-105 transition-transform">
+        <div class="flex items-center justify-between mb-2">
+          <div>
+            <div class="text-slate-200 text-sm mb-1">Courses Completed</div>
+            <div class="text-white text-4xl font-bold" id="coursesCompleted">0</div>
+          </div>
+          <svg class="w-12 h-12 text-slate-300" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
+          </svg>
+        </div>
+      </div>
+
+      <div class="bg-blue-950 rounded-lg p-6 transform hover:scale-105 transition-transform">
+        <div class="flex items-center justify-between">
+          <div>
+            <div class="text-slate-200 text-sm mb-1">Challenges Completed</div>
+            <div class="text-white text-4xl font-bold" id="challengesCompleted">0</div>
+          </div>
+          <svg class="w-12 h-12 text-slate-300" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+          </svg>
+        </div>
+      </div>
+
+      <div class="bg-blue-950 rounded-lg p-6 transform hover:scale-105 transition-transform">
+        <div class="flex items-center justify-between">
+          <div>
+            <div class="text-slate-200 text-sm mb-1">Resources Accessed</div>
+            <div class="text-white text-4xl font-bold" id="resourcesAccessed">12</div>
+          </div>
+          <svg class="w-12 h-12 text-slate-300" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-blue-950 border-2 border-gray-600 rounded-lg p-6 mb-8 shadow-xl">
+      <div class="flex items-center justify-between mb-4 flex-wrap gap-4">
+        <h2 class="text-white text-2xl font-bold flex items-center gap-3">
+          <svg class="w-8 h-8 text-slate-400" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+          </svg>
+          Daily Challenge
+        </h2>
+        <div class="text-sm text-green-200">
+          Resets in: <span id="challengeTimer" class="font-bold text-white">23:45:12</span>
+        </div>
+      </div>
+
+      <div class="bg-black bg-opacity-30 rounded-lg p-6 mb-4">
+        <div class="flex items-start gap-4">
+          <div class="bg-slate-600 rounded-full p-3 flex-shrink-0">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-white font-bold text-lg mb-2" id="dailyChallengeTitle">Watch a Tutorial</h3>
+            <p class="text-gray-300 mb-4" id="dailyChallengeText">Watch a 10-minute coding tutorial on YouTube to improve your skills</p>
+            <button onclick="completeDailyChallenge()" 
+                    id="challengeBtn"
+                    class="bg-blue-600 hover:bg-gray-700 text-white font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105 flex items-center gap-2">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Mark as Complete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-6">
+      <div class="flex gap-2 flex-wrap">
+        <button onclick="showTab('courses')" id="tabCourses" class="tab-btn active px-6 py-3 rounded-lg font-semibold transition-all">
+           Recommended Courses
+        </button>
+        <button onclick="showTab('computer')" id="tabComputer" class="tab-btn px-6 py-3 rounded-lg font-semibold transition-all">
+           Computer Training
+        </button>
+        <button onclick="showTab('career')" id="tabCareer" class="tab-btn px-6 py-3 rounded-lg font-semibold transition-all">
+           Career Advice
+        </button>
+      </div>
+    </div>
+
+    <div id="coursesTab" class="tab-content">
+      <div class="mb-6">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-white text-2xl font-bold">Recommended Courses for You</h2>
+          <button onclick="refreshCourses()" class="text-blue-400 hover:text-blue-300 text-sm font-semibold flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+            </svg>
+            Refresh
+          </button>
+        </div>
+        <p class="text-gray-400 mb-6">Curated courses from YouTube and Coursera based on IT/Technology careers</p>
+      </div>
+      
+      <div id="recommendedCoursesContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="bg-gray-800 rounded-lg overflow-hidden hover:shadow-2xl transition-all transform hover:-translate-y-2">
+          <div class="bg-blue-950 h-40 flex items-center justify-center relative">
+            <svg class="w-20 h-20 text-white opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+            </svg>
+            <div class="absolute top-2 right-2 bg-black bg-opacity-70 px-2 py-1 rounded text-xs text-white">
+              YouTube
             </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-white text-lg font-bold mb-2 line-clamp-2">HTML & CSS - Complete Web Development Course</h3>
+            <p class="text-gray-400 text-sm mb-4 line-clamp-2">Learn to build beautiful websites from scratch with HTML and CSS</p>
+            <p class="text-xs text-gray-500 mb-4">Web Development Basics</p>
+            <a href="https://www.youtube.com/results?search_query=html+css+tutorial+for+beginners" target="_blank" 
+               class="w-full inline-block text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition-all transform hover:scale-105">
+              Start Learning
+            </a>
+          </div>
+        </div>
+
+         <div class="bg-gray-800 rounded-lg overflow-hidden hover:shadow-2xl transition-all transform hover:-translate-y-2">
+          <div class="bg-blue-950 h-40 flex items-center justify-center relative">
+            <svg class="w-20 h-20 text-white opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+            <div class="absolute top-2 right-2 bg-black bg-opacity-70 px-2 py-1 rounded text-xs text-white">
+              YouTube
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-white text-lg font-bold mb-2 line-clamp-2">JavaScript Programming - Full Course</h3>
+            <p class="text-gray-400 text-sm mb-4 line-clamp-2">Master JavaScript from beginner to advanced level</p>
+            <p class="text-xs text-gray-500 mb-4">Programming Fundamentals</p>
+            <a href="https://www.youtube.com/results?search_query=javascript+tutorial+full+course" target="_blank" 
+               class="w-full inline-block text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition-all transform hover:scale-105">
+              Start Learning
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg overflow-hidden hover:shadow-2xl transition-all transform hover:-translate-y-2">
+          <div class="bg-blue-950 h-40 flex items-center justify-center relative">
+            <svg class="w-20 h-20 text-white opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+            <div class="absolute top-2 right-2 bg-black bg-opacity-70 px-2 py-1 rounded text-xs text-white">
+              Coursera
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-white text-lg font-bold mb-2 line-clamp-2">Python Programming - Course</h3>
+            <p class="text-gray-400 text-sm mb-4 line-clamp-2">Learn Python programming with hands-on projects and exercises</p>
+            <p class="text-xs text-gray-500 mb-4">University of Michigan</p>
+            <a href="https://www.coursera.org/specializations/python" target="_blank" 
+               class="w-full inline-block text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition-all transform hover:scale-105">
+              Start Learning
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div id="computerTab" class="tab-content hidden">
+      <h2 class="text-white text-2xl font-bold mb-6">Basic Computer Training</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+       
+        <div class="bg-gray-800 rounded-lg p-6 hover:shadow-xl transition-all">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="bg-blue-600 rounded-lg p-3">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-white font-bold text-lg">Microsoft Office Suite</h3>
+              <p class="text-sm text-gray-400">Word, Excel, PowerPoint</p>
+            </div>
+          </div>
+          <ul class="space-y-2 mb-4">
+            <li class="text-white flex items-center gap-2 text-sm">
+              <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              Document formatting & templates
+            </li>
+            <li class="text-white flex items-center gap-2 text-sm">
+              <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              Spreadsheet basics & formulas
+            </li>
+            <li class="text-white flex items-center gap-2 text-sm">
+              <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              Creating presentations
+            </li>
+          </ul>
+          <a href="https://www.youtube.com/results?search_query=microsoft+office+tutorial" target="_blank" class="block text-center bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-lg transition-all">
+            Learn More
+          </a>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg p-6 hover:shadow-xl transition-all">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="bg-blue-600 rounded-lg p-3">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-white font-bold text-lg">Typing Skills</h3>
+              <p class="text-sm text-gray-400">Improve your typing speed</p>
+            </div>
+          </div>
+          <ul class="space-y-2 mb-4">
+            <li class="text-white flex items-center gap-2 text-sm">
+              <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              Touch typing techniques
+            </li>
+            <li class="text-white flex items-center gap-2 text-sm">
+              <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              Practice exercises
+            </li>
+            <li class="text-white flex items-center gap-2 text-sm">
+              <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              Speed and accuracy tests
+            </li>
+          </ul>
+          <a href="https://www.typing.com" target="_blank" class="block text-center bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-lg transition-all">
+            Learn More
+          </a>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg p-6 hover:shadow-xl transition-all">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="bg-blue-600 rounded-lg p-3">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-white font-bold text-lg">Internet Basics</h3>
+              <p class="text-sm text-gray-400">Email, browsing, online safety</p>
+            </div>
+          </div>
+          <ul class="space-y-2 mb-4">
+            <li class="text-white flex items-center gap-2 text-sm">
+              <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              Email management
+            </li>
+            <li class="text-white flex items-center gap-2 text-sm">
+              <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              Web browsing tips
+            </li>
+            <li class="text-white flex items-center gap-2 text-sm">
+              <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              Online security basics
+            </li>
+          </ul>
+          <a href="https://www.youtube.com/results?search_query=internet+basics+tutorial" target="_blank" class="block text-center bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-lg transition-all">
+            Learn More
+          </a>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg p-6 hover:shadow-xl transition-all">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="bg-blue-600 rounded-lg p-3">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-white font-bold text-lg">File Management</h3>
+              <p class="text-sm text-gray-400">Organize your digital files</p>
+            </div>
+          </div>
+          <ul class="space-y-2 mb-4">
+            <li class="text-white flex items-center gap-2 text-sm">
+              <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              Creating folders
+            </li>
+            <li class="text-white flex items-center gap-2 text-sm">
+              <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              File organization systems
+            </li>
+            <li class="text-white flex items-center gap-2 text-sm">
+              <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              Backup strategies
+            </li>
+          </ul>
+          <a href="https://www.youtube.com/results?search_query=file+management+tutorial" target="_blank" class="block text-center bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-lg transition-all">
+            Watch Guide
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="careerTab" class="tab-content hidden">
+      <h2 class="text-white text-2xl font-bold mb-6">Career Advice & Resources</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-800 rounded-lg overflow-hidden hover:shadow-xl transition-all">
+          <div class="bg-blue-950 p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Resume Writing Tips</h3>
+            <p class="text-slate-100 text-sm">Create a professional resume that stands out</p>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-3 mb-4">
+              <li class="text-white flex items-start gap-3">
+                <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm">Tailor resume to each job application</span>
+              </li>
+              <li class="text-white flex items-start gap-3">
+                <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm">Keep it concise (1-2 pages)</span>
+              </li>
+            </ul>
+            <a href="https://www.indeed.com/career-advice/resumes-cover-letters" target="_blank" class="block text-center bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-lg transition-all">
+              Read Full Guide
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg overflow-hidden hover:shadow-xl transition-all">
+          <div class="bg-blue-950 p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Interview Preparation</h3>
+            <p class="text-slate-100 text-sm">Ace your job interviews with confidence</p>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-3 mb-4">
+              <li class="text-white flex items-start gap-3">
+                <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm">Research the company thoroughly</span>
+              </li>
+              <li class="text-white flex items-start gap-3">
+                <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm">Practice STAR method for behavioral questions</span>
+              </li>
+              <li class="text-white flex items-start gap-3">
+                <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm">Prepare thoughtful questions to ask</span>
+              </li>
+            </ul>
+            <a href="https://www.themuse.com/advice/interview-questions-and-answers" target="_blank" class="block text-center bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-lg transition-all">
+              View Interview Tips
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg overflow-hidden hover:shadow-xl transition-all">
+          <div class="bg-blue-950 p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Job Search Strategies</h3>
+            <p class="text-slate-100 text-sm">Find opportunities faster and smarter</p>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-3 mb-4">
+              <li class="text-white flex items-start gap-3">
+                <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm">Leverage LinkedIn networking</span>
+              </li>
+              <li class="text-white flex items-start gap-3">
+                <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm">Set up job alerts on multiple platforms</span>
+              </li>
+              <li class="text-white flex items-start gap-3">
+                <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm">Apply within 48 hours of posting</span>
+              </li>
+            </ul>
+            <a href="https://www.thebalancemoney.com/job-search-tips" target="_blank" class="block text-center bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-lg transition-all">
+              Explore Strategies
+            </a>
+          </div>
+        </div>
+
+         <div class="bg-gray-800 rounded-lg overflow-hidden hover:shadow-xl transition-all">
+          <div class="bg-blue-950 p-6">
+            <h3 class="text-xl font-bold text-white mb-2">LinkedIn Profile Optimization</h3>
+            <p class="text-slate-100 text-sm">Build a strong professional presence</p>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-3 mb-4">
+              <li class="text-white flex items-start gap-3">
+                <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm">Use professional profile photo</span>
+              </li>
+              <li class="text-white flex items-start gap-3">
+                <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm">Write compelling headline and summary</span>
+              </li>
+              <li class="text-white flex items-start gap-3">
+                <svg class="w-5 h-5 text-white flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm">Request recommendations from colleagues</span>
+              </li>
+            </ul>
+            <a href="https://www.linkedin.com/business/talent/blog/product-tips/linkedin-profile-summaries-that-we-love-and-how-to-boost-your-own" target="_blank" class="block text-center bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-lg transition-all">
+              Optimize Profile
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  </section>     
             
-        </main>
+ </main>
     </div>
     <script src="./js/dashboard.js"></script>
+    <script src="./js/jobtrack.js"></script>
+    <script src="./js/upskill.js"></script>
 </body>
 </html>

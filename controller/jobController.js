@@ -1,5 +1,6 @@
 const { validationResult } = require('express-validator')
 const JobApplication = require('../models/JobApplication')
+const User = require('../models/User')
 
 exports.createJobApplication = async (req, res) => {
  
@@ -28,6 +29,21 @@ exports.createJobApplication = async (req, res) => {
       jobType: jobType || 'Full-time'
     })
 
+    try {
+
+      const user = await User.findById(req.user.id)
+
+      if (user) {
+
+        user.xp += 10
+        user.totalXPEarned += 10
+        await user.save()
+      }
+
+    } catch (error) {
+      console.error('XP error:', err)
+    }
+
     res.status(201).json({
       success: true,
       message: 'Job application created successfully',
@@ -43,7 +59,6 @@ exports.createJobApplication = async (req, res) => {
     })
   }
 }
-
 
 exports.getJobApplications = async (req, res) => {
   try {

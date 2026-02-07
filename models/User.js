@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');
-const bcrypt = require('bcryptjs');
+const mongoose = require('mongoose')
+const bcrypt = require('bcryptjs')
 
 const userSchema = new mongoose.Schema({
   name: {
@@ -59,6 +59,28 @@ const userSchema = new mongoose.Schema({
   updatedAt: {
     type: Date,
     default: Date.now
+  },
+  coursesCompleted: [{
+    courseName: String,
+    completedAt: Date,
+    xpEarned: Number
+  }],
+  challengesCompleted: [{
+    challengeId: String,
+    completedAt: Date,
+    xpEarned: Number
+  }],
+  lastChallengeDate: {
+    type: Date,
+    default: null
+  },
+  careerInterests: [{
+    type: String
+  }],
+  upskillProgress: {
+    totalCourses: {type: Number, default: 0},
+    totalChallenges: {type: Number, default: 0},
+    resourcesAccessed: {type: Number, default: 0}
   }
 }, {
   timestamps: true
@@ -66,22 +88,22 @@ const userSchema = new mongoose.Schema({
 
 userSchema.pre('save', async function(next) {
   if (!this.isModified('password')) {
-    return next();
+    return next()
   }
   
-  const salt = await bcrypt.genSalt(10);
-  this.password = await bcrypt.hash(this.password, salt);
+  const salt = await bcrypt.genSalt(10)
+  this.password = await bcrypt.hash(this.password, salt)
   next();
 });
 
 userSchema.methods.comparePassword = async function(candidatePassword) {
-  return await bcrypt.compare(candidatePassword, this.password);
+  return await bcrypt.compare(candidatePassword, this.password)
 };
 
 userSchema.methods.toJSON = function() {
-  const user = this.toObject();
-  delete user.password;
-  return user;
+  const user = this.toObject()
+  delete user.password
+  return user
 };
 
-module.exports = mongoose.model('User', userSchema);
+module.exports = mongoose.model('User', userSchema)

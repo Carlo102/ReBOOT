@@ -57,7 +57,7 @@
 
         <div id="registerForm" class="bg-[#081028] rounded-2xl shadow-2xl p-8 border border-gray-700 hidden">
             <div class="text-center mb-8">
-                <div class="inline-block p-4 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full mb-4">
+                <div class="inline-block p-4 bg-blue-900 rounded-full mb-4">
                     <i class="fas fa-user-plus text-white text-3xl"></i>
                 </div>
                 <h1 class="text-3xl font-bold text-white">Create Account</h1>
@@ -85,8 +85,14 @@
                 </div>
 
                 <div>
-                    <label class="block text-sm font-medium text-gray-300 mb-2">Job Role (Optional)</label>
-                    <input type="text" id="registerRole" class="w-full p-3 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent placeholder-gray-400" placeholder="Role">
+                    <label class="block text-sm font-medium text-gray-300 mb-2">Career Field</label>
+                    <select type="text" id="registerRole" class="w-full p-3 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent placeholder-gray-400">
+                        <option value="Technology">Technology</option>
+                        <option value="Business">Business & Marketing</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Education">Education</option>
+                    </select>
                 </div>
 
                 <div>
@@ -94,7 +100,7 @@
                     <input type="text" id="registerLocation" class="w-full p-3 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent placeholder-gray-400" placeholder="City">
                 </div>
 
-                <button type="submit" id="registerBtn" class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 rounded-lg font-medium hover:from-indigo-700 hover:to-purple-700 transition shadow-lg">
+                <button type="submit" id="registerBtn" class="w-full bg-gradient-to-br from-indigo-500 to-purple-600 text-white py-3 rounded-lg font-medium hover:from-indigo-700 hover:to-purple-700 transition shadow-lg">
                     Create Account
                 </button>
             </form>

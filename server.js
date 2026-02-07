@@ -5,6 +5,7 @@ require('dotenv').config()
 
 const authRoutes = require('./routes/auth')
 const jobRoutes = require('./routes/jobs')
+const upskillRoutes = require('./routes/upskill')
 const app = express()
 app.use(express.static('public'));
 
@@ -26,6 +27,7 @@ mongoose.connect(process.env.MONGODB_URI)
 
 app.use('/api/auth', authRoutes)
 app.use('/api/jobs', jobRoutes)
+app.use('/api/user', upskillRoutes)
 
 app.get('/api/health', (req, res) => {
   res.json({ 

@@ -1,5 +1,3 @@
-// API calls of ReBOOT APP
-
 const API_BASE_URL = 'http://localhost:8888/api'
 const getToken = () => {
     return localStorage.getItem('token')
